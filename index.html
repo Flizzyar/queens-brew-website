@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="initial-scale=1, width=device-width" name="viewport">
-    <link rel="icon" type="image/x-icon" href="./Images/Favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Queens Brew</title>
-</head>
-<body>
-    <header>
-        <a href="index.html"><img src="Images/Logo.png" alt="Logotyp för Queens Brew, ett schackinspirerat café. Loggan visar texten Queens Brew runt en kopp kaffe med ånga formad som en krona."></a>
-        <ul>
-            <li><a href="#">Öppettider</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="meny.html">Meny</a></li>
-        </ul>
-    </header>
-    <main>
-        <img src="Images/queen-steam.png" alt="En kromad schackpjäs, drottningen, med tre mjuka ångor som stiger upp från toppen, symboliserande kaffe och schack i en stilren design.">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./Images/Favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Queens Brew</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"
+                ><img
+                    src="Images/Logo.png"
+                    alt="Logotyp för Queens Brew, ett schackinspirerat café. Loggan visar texten Queens Brew runt en kopp kaffe med ånga formad som en krona."
+            /></a>
+            <nav>
+                <ul>
+                    <li><a href="#Öppettider och Kontakt">Öppettider</a></li>
+                    <li><a href="#Öppettider och Kontakt">Kontakt</a></li>
+                    <li><a href="meny.html">Meny</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <section class="välkomst-text">
-            <h1>Välkommen till Queens Brew</h1>
-        <p>På Queens Brew kombinerar vi passionen för kaffe med kärleken till schack. Njut av en unik atmosfär där varje kopp kaffe är en del av spelet.</p>
-        </section>
+        <main>
+            <img
+                id="queen"
+                src="Images/queen-steam.png"
+                alt="En kromad schackpjäs, drottningen, med tre mjuka ångor som stiger upp från toppen, symboliserande kaffe och schack i en stilren design."
+            />
 
-        <section class="öppettider">
-        <h1>Öppettider</h1>
-        <p>Måndag - Fredag: 08:00 - 18:00</p>
-        <p>Lördag - Söndag: 09:00 - 16:00</p>
-        </section>
+            <section id="välkommen">
+                <h1>Välkommen till QUEENS BREW</h1>
+                <p>
+                    Där drottningen alltid gör första draget och varje kopp är
+                    en kunglig seger.
+                </p>
+                <p>
+                    Greppa en Yaaas Queen Cappuccino eller en Royal Shot
+                    Espresso och låt smaken sätta motståndaren matt.
+                </p>
+            </section>
 
-        <section class="kontakt">
-        <h1>Kontakt</h1>
-        <p>Email: info@queensbrew.se</p>
-        <p>Telefon: 012-345 6789</p>
-        <p>Adress: Schackgatan 1, 123 45 Kaffestad</p>
-        </section>
-    </main>
-</body>
+            <img id="coffee" src="./Images/Coffee.avif" alt="" />
+
+            <section id="Öppettider och Kontakt">
+                <h2>Öppettider</h2>
+                <p>Måndag - Fredag: 08:00 - 18:00</p>
+                <p>Lördag - Söndag: 09:00 - 16:00</p>
+                <h2>Kontakt</h2>
+                <p>Email: info@queensbrew.se</p>
+                <p>Telefon: 012-345 6789</p>
+                <p>Adress: Schackgatan 1, 123 45 Kaffestad</p>
+            </section>
+
+            <section id="meny">
+                <h2>MENY</h2>
+                <p>
+                    Kolla på vår <a href="meny.html">meny-sida</a> för att se
+                    våra läckra drycker!
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Queens Brew. All rights reserved.</p>
+        </footer>
+    </body>
 </html>

@@ -1,54 +1,112 @@
 @font-face {
-    font-family: NotoSansKR;
-    src: url(./Fonts/NotoSansKR-Regular.ttf) format('truetype');
+    font-family: AlanSans;
+    src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: NotoSansKR, Arial, sans-serif;
+    font-family: AlanSans, Arial, sans-serif;
     font-size: 1rem;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 header {
-    background-color: #050d19;
-    padding: 1rem 1rem 0rem 1rem;
+    background-color: #060d18;
+    padding: 0rem 1rem 0rem 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 5rem;
 }
 
 header img {
     height: auto;
     width: 4rem;
+    margin:0;
 }
 
 a {
     text-decoration: none;
-    color: #b89569;
+    color: #ba976a;
     font-weight: bold;
 }
 
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
 header ul {
-    color: #b89569;
+    color: #f2e6cc;
     display: flex;
-    align-items: center;
     list-style: none;
     gap: 1rem;
 }
 
-.välkomst-text {
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    color: #1a0d00;
+    background-color: #f2e6cc;
     text-align: center;
-    color: #050d19;
-    background-color: #fffdf6;
-    padding-inline: 3rem;
-    padding-block: 1rem;
-}
-.välkomst-text h1 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
-main img {
+#queen {
     width: 100%;
     height: auto;
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+#välkommen {
+    padding-inline: 3rem;
+    padding-block: 3rem;
+}
+
+#coffee {
+    width: 22rem;
+}
+
+main h2 {
+    margin: 2rem 0rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+#info {
+    text-align: left;
+}
+
+#meny {
+    border: #ba976a solid 0.2rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#meny h2 {
+    margin: 0rem;
+    font-size: 1.2rem;
+}
+
+#meny p {
+    margin: 0.5rem 0rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #060d18;
+    color: #ba976a;
+    text-align: center;
+    padding: 3rem;
 }

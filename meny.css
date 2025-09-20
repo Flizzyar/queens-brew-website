@@ -1,0 +1,91 @@
+@font-face {
+    font-family: AlanSans;
+    src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: AlanSans, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f2e6cc;
+}
+
+header {
+    background-color: #060d18;
+    padding: 0rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+header img {
+    height: auto;
+    width: 4rem;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    color: #ba976a;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+header ul {
+    color: #f2e6cc;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    color: #1a0d00;
+    text-align: center;
+}
+
+#meny {
+    border: #ba976a solid 0.2rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#meny h2 {
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+
+#meny p {
+    margin: 0.5rem 0rem;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #060d18;
+    color: #ba976a;
+    text-align: center;
+    padding: 3rem;
+}
