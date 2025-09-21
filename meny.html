@@ -1,19 +1,31 @@
+<!--
+HTML-kommentar: Strukturöversikt
+1. Header-sektion innehåller logotyp och navigering
+   1.1 Logotyp som också fungerar som länk till startsidan
+   1.2 Navigationsmeny
+2. Main-sektion innehåller huvudinnehållet på sidan
+   2.1 Menysektion med listning av drycker och bild
+3. Footer-sektion med copyright
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/x-icon" href="./Images/Favicon.png" />
+        <link rel="icon" type="image/x-icon" href="./images/Favicon.png" />
         <link rel="stylesheet" href="meny.css" />
         <title>Queens Brew Meny</title>
     </head>
     <body>
+        <!-- 1. Header-sektion innehåller logotyp och navigering -->
         <header>
             <a href="index.html"
                 ><img
-                    src="Images/Logo.png"
+                    src="images/Logo.png"
                     alt="Logotyp för Queens Brew, ett schackinspirerat café. Loggan visar texten Queens Brew runt en kopp kaffe med ånga formad som en krona."
             /></a>
+            <!-- 1.2 Navigationsmeny -->
             <nav>
                 <ul>
                     <li><a href="#">Öppettider</a></li>
@@ -22,7 +34,9 @@
                 </ul>
             </nav>
         </header>
+        <!-- 2. Main-sektion innehåller huvudinnehållet på sidan -->
         <main>
+            <!-- 2.1 Menysektion med listning av drycker och bild -->
             <section id="meny">
                 <h2>MENY</h2>
                 <p>♥Royal Shot Espresso♥</p>
@@ -31,9 +45,14 @@
                 <p>♥Slay The Knight Macchiato♥</p>
                 <p>♥Werk That Rook Flat White♥</p>
                 <p>♥Bish Please Cortado♥</p>
-                <img src="./Images/coffee-meny.jpg" alt="" />
+                <!-- Bild som kompletterar menyn -->
+                <img
+                    src="./images/coffee-meny.jpg"
+                    alt="En vit kopp med Cappuccino i som står framför ett schackbräde. Skummet på kaffet formar en krona."
+                />
             </section>
         </main>
+        <!-- 3. Footer-sektion med copyright -->
         <footer>
             <p>&copy; 2025 Queens Brew. All rights reserved.</p>
         </footer>

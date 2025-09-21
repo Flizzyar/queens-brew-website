@@ -1,3 +1,21 @@
+/*
+CSS-kommentar: Strukturöversikt
+1. Font-face och global styling
+2. Header
+   2.1 Header-bakgrund och layout
+   2.2 Navigationsmeny
+   2.3 Logotyp i headern
+   2.4 Länkar i headern
+   2.5 Lista i header (navigation)
+3. Main-sektion
+   3.1 Välkomstsektion
+   3.2 Öppettider och kontakt
+   3.3 Meny-sektion
+4. Footer
+5. Media query för större skärmar
+*/
+
+/* 1. Font-face och global styling */
 @font-face {
     font-family: AlanSans;
     src: url(./fonts/AlanSans-Regular.ttf) format('truetype');
@@ -10,29 +28,33 @@
     font-size: 1rem;
 }
 
+/* 2. Header */
 header {
+    /* 2.1 Header-bakgrund och layout */
     background-color: #0a1925;
     display: flex;
     justify-content: space-between;
     background-image: url(./images/queen1.png);
-    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 35rem;
 }
 
+/* 2.2 Navigationsmeny */
 nav {
     padding: 0rem 1rem 0rem 1rem;
     margin: 2rem;
 }
 
+/* 2.3 Logotyp i headern */
 header img {
     height: auto;
     width: 4rem;
     margin: 1rem;
 }
 
+/* 2.4 Länkar i headern */
 a {
     text-decoration: none;
     color: #ba976a;
@@ -44,6 +66,7 @@ a:focus {
     text-decoration: underline;
 }
 
+/* 2.5 Lista i header (navigation) */
 header ul {
     color: #f2e6cc;
     display: flex;
@@ -51,6 +74,7 @@ header ul {
     gap: 1rem;
 }
 
+/* 3. Main-sektion */
 main {
     display: flex;
     flex: 1;
@@ -61,6 +85,7 @@ main {
     text-align: center;
 }
 
+/* 3.1 Välkomstsektion */
 main h1 {
     margin-bottom: 1rem;
     font-size: 1.7rem;
@@ -71,6 +96,7 @@ main h1 {
     padding-block: 3rem;
 }
 
+/* 3.2 Öppettider och kontakt */
 #coffee {
     width: 20rem;
 }
@@ -84,6 +110,7 @@ main h2 {
     text-align: left;
 }
 
+/* 3.3 Meny-sektion */
 #meny {
     border: #ba976a solid 0.2rem;
     padding: 2rem;
@@ -102,6 +129,7 @@ main h2 {
     font-weight: bold;
 }
 
+/* 4. Footer */
 footer {
     background-color: #0a1925;
     color: #ba976a;
@@ -109,7 +137,8 @@ footer {
     padding: 3rem;
 }
 
-@media (min-width: 1024px) {
+/* 5. Media query för större skärmar */
+@media (min-width: 980px) {
     header {
         background-image: url(./images/queen2.png);
         height: 35rem;

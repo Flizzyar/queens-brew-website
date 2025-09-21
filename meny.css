@@ -1,3 +1,21 @@
+/*
+CSS-kommentar: Strukturöversikt
+1. Font-face och global styling
+2. Body
+3. Header
+   3.1 Header-layout och bakgrund
+   3.2 Logotyp i headern
+   3.3 Länkar i headern
+   3.4 Lista i header (navigation)
+4. Main-sektion
+   4.1 Menysektion med listning av drycker
+       4.1.1 Rubrik i menysektion
+       4.1.2 Paragrafer för drycker
+       4.1.3 Bild i menysektion
+5. Footer
+*/
+
+/* 1. Font-face och global styling */
 @font-face {
     font-family: AlanSans;
     src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
@@ -10,6 +28,7 @@
     font-size: 1rem;
 }
 
+/* 2. Body */
 body {
   display: flex;
   flex-direction: column;
@@ -17,7 +36,9 @@ body {
   background-color: #f2e6cc;
 }
 
+/* 3. Header */
 header {
+    /* 3.1 Header-layout och bakgrund */
     background-color: #060d18;
     padding: 0rem 1rem 0rem 1rem;
     display: flex;
@@ -26,12 +47,14 @@ header {
     height: 5rem;
 }
 
+/* 3.2 Logotyp i headern */
 header img {
     height: auto;
     width: 4rem;
     margin:0;
 }
 
+/* 3.3 Länkar i headern */
 a {
     text-decoration: none;
     color: #ba976a;
@@ -42,6 +65,7 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+/* 3.4 Lista i header (navigation) */
 header ul {
     color: #f2e6cc;
     display: flex;
@@ -49,6 +73,7 @@ header ul {
     gap: 1rem;
 }
 
+/* 4. Main-sektion */
 main {
     display: flex;
     flex: 1;
@@ -58,6 +83,7 @@ main {
     text-align: center;
 }
 
+/* 4.1 Menysektion med listning av drycker */
 #meny {
     border: #ba976a solid 0.2rem;
     padding: 2rem;
@@ -66,16 +92,19 @@ main {
     text-align: center;
 }
 
+/* 4.1.1 Rubrik i menysektion */
 #meny h2 {
     margin: 2rem;
     font-size: 1.2rem;
 }
 
+/* 4.1.2 Paragrafer för drycker */
 #meny p {
     margin: 0.5rem 0rem;
     font-weight: bold;
 }
 
+/* 4.1.3 Bild i menysektion */
 img {
     width: 100%;
     height: auto;
@@ -83,6 +112,7 @@ img {
     margin-top: 2rem;
 }
 
+/* 5. Footer */
 footer {
     background-color: #060d18;
     color: #ba976a;

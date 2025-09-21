@@ -1,3 +1,17 @@
+<!--
+HTML-kommentar: Strukturöversikt
+1. Header-sektion innehåller logotyp och navigering
+   1.1 Logotyp som också fungerar som länk till startsidan
+   1.2 Navigationsmeny
+2. Main-sektion innehåller huvudinnehållet på sidan
+   2.1 Välkomstsektion
+   2.2 Öppettider och kontaktinformation
+       2.2.1 Bild med alt-text som beskriver innehållet för skärmläsare
+       2.2.2 Div med textinformation om öppettider och kontakt
+   2.3 Menysektion som länkar vidare till en separat sida
+3. Footer-sektion med copyright
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,12 +22,15 @@
         <title>Queens Brew</title>
     </head>
     <body>
+        <!-- 1. Header-sektion innehåller logotyp och navigering -->
         <header>
+            <!-- 1.1 Logotyp som också fungerar som länk till startsidan -->
             <a href="index.html"
                 ><img
                     src="images/Logo.png"
                     alt="Logotyp för Queens Brew, ett schackinspirerat café. Loggan visar texten Queens Brew runt en kopp kaffe med ånga formad som en krona."
             /></a>
+            <!-- 1.2 Navigationsmeny -->
             <nav>
                 <ul>
                     <li><a href="#öppettider-kontakt">Öppettider</a></li>
@@ -23,7 +40,9 @@
             </nav>
         </header>
 
+        <!-- 2. Main-sektion innehåller huvudinnehållet på sidan -->
         <main>
+            <!-- 2.1 Välkomstsektion -->
             <section id="välkommen">
                 <h1>Välkommen till QUEENS BREW</h1>
                 <p>
@@ -36,12 +55,15 @@
                 </p>
             </section>
 
+            <!-- 2.2 Öppettider och kontaktinformation -->
             <section id="öppettider-kontakt">
+                <!-- 2.2.1 Bild med alt-text som beskriver innehållet för skärmläsare -->
                 <img
                     id="coffee"
                     src="./images/Coffee.avif"
                     alt="Ett schackbräde i trä med schackpjäser uppställda, bredvid står ett glas med kaffecocktail som avger lätt skum, hela scenen badar i mjukt ljus som skapar reflektioner på brädans yta."
                 />
+                <!-- 2.2.2 Div med textinformation om öppettider och kontakt -->
                 <div id="info">
                     <h2>Öppettider</h2>
                     <p>Måndag - Fredag: 08:00 - 18:00</p>
@@ -53,6 +75,7 @@
                 </div>
             </section>
 
+            <!-- 2.3 Menysektion som länkar vidare till en separat sida -->
             <section id="meny">
                 <h2>MENY</h2>
                 <p>
@@ -61,6 +84,8 @@
                 </p>
             </section>
         </main>
+
+        <!-- 3. Footer-sektion med copyright -->
         <footer>
             <p>&copy; 2025 Queens Brew. All rights reserved.</p>
         </footer>
