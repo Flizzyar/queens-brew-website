@@ -1,6 +1,6 @@
 @font-face {
     font-family: AlanSans;
-    src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
+    src: url(./fonts/AlanSans-Regular.ttf) format('truetype');
 }
 
 * {
@@ -10,25 +10,27 @@
     font-size: 1rem;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 header {
-    background-color: #060d18;
-    padding: 0rem 1rem 0rem 1rem;
+    background-color: #0a1925;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 5rem;
+    background-image: url(./images/queen1.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+}
+
+nav {
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 2rem;
 }
 
 header img {
     height: auto;
     width: 4rem;
-    margin:0;
+    margin: 1rem;
 }
 
 a {
@@ -37,8 +39,9 @@ a {
     font-weight: bold;
 }
 
-a:hover, a:focus {
-  text-decoration: underline;
+a:hover,
+a:focus {
+    text-decoration: underline;
 }
 
 header ul {
@@ -58,11 +61,6 @@ main {
     text-align: center;
 }
 
-#queen {
-    width: 100%;
-    height: auto;
-}
-
 main h1 {
     margin-bottom: 1rem;
     font-size: 1.7rem;
@@ -74,7 +72,7 @@ main h1 {
 }
 
 #coffee {
-    width: 22rem;
+    width: 20rem;
 }
 
 main h2 {
@@ -105,8 +103,27 @@ main h2 {
 }
 
 footer {
-    background-color: #060d18;
+    background-color: #0a1925;
     color: #ba976a;
     text-align: center;
     padding: 3rem;
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-image: url(./images/queen2.png);
+        height: 35rem;
+    }
+    nav {
+        margin: 2rem;
+    }
+    #öppettider-kontakt {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    #coffee {
+        width: 40rem;
+        height: auto;
+    }
 }
