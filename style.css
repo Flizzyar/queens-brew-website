@@ -18,7 +18,7 @@ CSS-kommentar: Strukturöversikt
 /* 1. Font-face och global styling */
 @font-face {
     font-family: AlanSans;
-    src: url(./fonts/AlanSans-Regular.ttf) format('truetype');
+    src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
 }
 
 * {
@@ -34,7 +34,7 @@ header {
     background-color: #0a1925;
     display: flex;
     justify-content: space-between;
-    background-image: url(./images/queen1.png);
+    background-image: url(./Images/queen1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
