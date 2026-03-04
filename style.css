@@ -18,7 +18,7 @@ CSS-kommentar: Strukturöversikt
 /* 1. Font-face och global styling */
 @font-face {
     font-family: AlanSans;
-    src: url(Fonts/AlanSans-Regular.ttf) format('truetype');
+    src: url(./Fonts/AlanSans-Regular.ttf) format('truetype');
 }
 
 * {
@@ -34,7 +34,7 @@ header {
     background-color: #0a1925;
     display: flex;
     justify-content: space-between;
-    background-image: url(Images/queen1.png);
+    background-image: url(./Images/queen1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +140,7 @@ footer {
 /* 5. Media query för större skärmar */
 @media (min-width: 980px) {
     header {
-        background-image: url(./images/queen2.png);
+        background-image: url(./Images/queen2.png);
         height: 35rem;
     }
     nav {
